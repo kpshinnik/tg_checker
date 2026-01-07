@@ -1,0 +1,26 @@
+# Telegram API настройки (получить на https://my.telegram.org/apps)
+TELEGRAM_API_ID=your_api_id_here
+TELEGRAM_API_HASH=your_api_hash_here
+
+# OpenAI API ключ (получить на https://platform.openai.com/api-keys)
+OPENAI_API_KEY=your_openai_api_key_here
+
+# Дополнительные настройки для орфографа (опционально)
+CHECK_DELAY=1.0
+MAX_MESSAGE_LENGTH=2000
+
+# Настройки экспорта истории (опционально)
+# Можно использовать отдельные API ключи для экспорта
+# EXPORT_API_ID=your_export_api_id_here
+# EXPORT_API_HASH=your_export_api_hash_here
+
+# Параметры экспорта
+EXPORT_HOURS_BACK=48
+DOWNLOAD_MEDIA=true
+MAX_FILE_SIZE_MB=50
+EXPORT_BASE_DIR=history
+
+# Фильтры типов чатов для экспорта
+EXPORT_PRIVATE_CHATS=true
+EXPORT_GROUPS=true
+EXPORT_CHANNELS=true 
