@@ -91,7 +91,7 @@ class TelegramSpellChecker:
                 """
             
             response = await self.openai_client.chat.completions.create(
-                model="gpt-4",
+                model="gpt-5.2",
                 messages=[
                     {"role": "system", "content": "Ты эксперт по русской орфографии и пунктуации."},
                     {"role": "user", "content": prompt}

@@ -15,8 +15,8 @@ class Config:
     OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
     
     # Настройки проверки
-    CHECK_DELAY = float(os.getenv('CHECK_DELAY', '1.0'))  # Задержка перед проверкой (сек)
-    MAX_MESSAGE_LENGTH = int(os.getenv('MAX_MESSAGE_LENGTH', '2000'))  # Максимальная длина сообщения для проверки
+    CHECK_DELAY = float(os.getenv('CHECK_DELAY', '1.0'))
+    MAX_MESSAGE_LENGTH = int(os.getenv('MAX_MESSAGE_LENGTH', '2000'))
     
     @classmethod
     def validate(cls):
@@ -35,4 +35,4 @@ class Config:
         if errors:
             raise ValueError(f"Ошибки конфигурации: {', '.join(errors)}")
             
-        return True 
+        return True
