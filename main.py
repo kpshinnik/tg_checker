@@ -96,7 +96,7 @@ class TelegramSpellChecker:
                     {"role": "system", "content": "Ты эксперт по русской орфографии и пунктуации."},
                     {"role": "user", "content": prompt}
                 ],
-                max_tokens=1000,
+                max_completion_tokens=1000,
                 temperature=0.1
             )
             
